@@ -7,6 +7,8 @@ import { InView } from "react-intersection-observer";
 import { FaMapMarkerAlt, FaGlobe, FaPhone, FaEnvelope } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 
+const prefix = process.env.NODE_ENV === "production" ? "/MD_Portfolio" : "";
+
 const About = () => {
     const [loading, setLoading] = useState(false);
     // Split description into paragraphs
@@ -54,7 +56,7 @@ const About = () => {
                     playsInline
                     preload="none"
                     className="h-full w-full object-cover opacity-30"
-                    src="/encryption.webm"
+                    src={`${prefix}/encryption.webm`}
                 />
             </div>
 
@@ -109,7 +111,7 @@ const About = () => {
                                     <div className="mt-8 relative z-[100]">
                                         <div className="inline-flex items-center rounded-lg overflow-hidden shadow-lg border border-[#7042f88b] bg-[#030014]/50 backdrop-blur-md">
                                             <a
-                                                href={resumeLink}
+                                                href={resumeLink.startsWith('http') ? resumeLink : `${prefix}${resumeLink}`}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="px-6 py-2 bg-gradient-to-r from-purple-500 to-cyan-500 text-white font-bold text-sm hover:scale-105 transition-all block relative z-[101] cursor-pointer"

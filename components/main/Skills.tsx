@@ -14,6 +14,7 @@ import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaTh } from "react-icons/fa";
+const prefix = process.env.NODE_ENV === "production" ? "/MD_Portfolio" : "";
 
 const Skills = () => {
     return (
@@ -163,7 +164,7 @@ const Skills = () => {
                         loop
                         muted
                         autoPlay
-                        src="/cards-video.webm"
+                        src={`${prefix}/cards-video.webm`}
                     />
                 </div>
             </div>
