@@ -52,7 +52,7 @@ const About = () => {
                     muted
                     autoPlay
                     playsInline
-                    preload="false"
+                    preload="none"
                     className="h-full w-full object-cover opacity-30"
                     src="/encryption.webm"
                 />
