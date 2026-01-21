@@ -1,9 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Image from "next/image";
+
+const prefix = process.env.NODE_ENV === "production" ? "/MD_Portfolio" : "";
 
 interface Props {
     src: string;
@@ -32,7 +34,7 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
             custom={index}
             transition={{ delay: index * animationDelay }}
         >
-            <Image src={src} width={width} height={height} alt="skill image" />
+            <Image src={`${prefix}${src}`} width={width} height={height} alt="skill image" />
         </motion.div>
     );
 };

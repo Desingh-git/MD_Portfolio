@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 
+const prefix = process.env.NODE_ENV === "production" ? "/MD_Portfolio" : "";
+
 interface Props {
     src: string;
     title: string;
@@ -18,7 +20,7 @@ const ProjectCard = ({ src, title, description, category, technologies, githubLi
             {/* Image Section - Top 55% */}
             <div className="relative w-full h-[55%] overflow-hidden">
                 <Image
-                    src={src}
+                    src={src.startsWith('http') ? src : `${prefix}${src}`}
                     alt={title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"

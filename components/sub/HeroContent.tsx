@@ -12,6 +12,8 @@ import Image from "next/image";
 import { InView } from "react-intersection-observer";
 import { FaLinkedin } from "react-icons/fa";
 
+const prefix = process.env.NODE_ENV === "production" ? "/MD_Portfolio" : "";
+
 const HeroContent = () => {
     const [wordIndex, setWordIndex] = useState(0);
     const [displayWord, setDisplayWord] = useState("");
@@ -144,7 +146,7 @@ const HeroContent = () => {
                                 <div className="flex flex-col items-center gap-4">
                                     <div className="relative flex justify-center items-center rounded-full overflow-hidden border-[6px] border-[#7042f88b] bg-gradient-to-r from-purple-500 to-cyan-500 aspect-square w-[280px] h-[280px] md:w-[400px] md:h-[400px]">
                                         <Image
-                                            src={heroData.profileImage}
+                                            src={`${prefix}${heroData.profileImage}`}
                                             alt="profile"
                                             fill
                                             className="object-cover"
