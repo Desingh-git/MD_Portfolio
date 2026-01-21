@@ -161,7 +161,7 @@ export const certificatesData = [
     },
 ];
 
-export const resumeLink = "./Mariya_Desingh_Resume.pdf";
+export const resumeLink = "/Mariya_Desingh_Resume.pdf";
 
 // ==================== CONTACT SECTION ====================
 export const contactData = {
