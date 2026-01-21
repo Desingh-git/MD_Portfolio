@@ -15,7 +15,7 @@ export const heroData = {
     highlightText: "important",
     mainSuffix: "then the",
     typingWords: ["Success", "Result", "Growth", "Innovation"],
-    profileImage: "./md.jpg",
+    profileImage: "/md.jpg",
     ctaButton: "Learn More!",
     ctaLink: "#about",
 };
@@ -23,7 +23,7 @@ export const heroData = {
 // ==================== ABOUT SECTION ====================
 export const aboutData = {
     name: "Mariya Desingh V",
-    profileImage: "./md.jpg",
+    profileImage: "/md.jpg",
     description:
         "I am a passionate Computer Science postgraduate student specializing in Data Science, with a strong interest in web development, software engineering, and machine learning. I enjoy building innovative and practical applications that solve real-world problems. I have hands-on experience working with technologies such as Python, Java, SQL, MongoDB, Flask, PHP, HTML, CSS, and JavaScript. My projects range from web applications and database-driven systems to machine learning and data visualization solutions. I am always eager to learn new technologies, improve my problem-solving skills, and explore emerging trends in AI and data-driven applications. I enjoy turning ideas into functional, user-friendly solutions and continuously strive to grow as a developer and data scientist.",
     tagline: "Shaping Tomorrow with Code and Creativity",
@@ -101,7 +101,7 @@ export const projectsData = [
         id: 1,
         name: "E-Commerce Dashboard",
         description: "A comprehensive admin dashboard for managing online stores.",
-        image: "./my.png",
+        image: "/my.png",
         category: "Web",
         technologies: ["React", "Next.js", "TypeScript"],
         link: "https://github.com/Desingh-git/Plant-Disease-prediction-using-ML",
@@ -110,7 +110,7 @@ export const projectsData = [
         id: 2,
         name: "Fitness Tracker App",
         description: "A mobile-first app to track workouts, nutrition, and personal goals.",
-        image: "./my.png",
+        image: "/my.png",
         category: "Mobile",
         technologies: ["React Native", "Firebase"],
         link: "https://github.com",
@@ -119,7 +119,7 @@ export const projectsData = [
         id: 3,
         name: "Brand Identity System",
         description: "Complete brand guidelines and visual identity package for a fintech startup.",
-        image: "./my.png",
+        image: "/my.png",
         category: "Design",
         technologies: ["Figma", "Illustrator"],
         link: "https://github.com",
@@ -128,7 +128,7 @@ export const projectsData = [
         id: 4,
         name: "Brand Identity System",
         description: "Complete brand guidelines and visual identity package for a fintech startup.",
-        image: "./my.png",
+        image: "/my.png",
         category: "Design",
         technologies: ["Figma", "Illustrator"],
         link: "https://github.com",
@@ -161,7 +161,7 @@ export const certificatesData = [
     },
 ];
 
-export const resumeLink = "./Mariya_Desingh_Resume.pdf";
+export const resumeLink = "/Mariya_Desingh_Resume.pdf";
 
 // ==================== CONTACT SECTION ====================
 export const contactData = {
