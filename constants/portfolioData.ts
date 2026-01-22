@@ -83,6 +83,7 @@ export const devTools = [
     { skill_name: "NetBeans" },
     { skill_name: "Ubuntu" },
     { skill_name: "Tableau" },
+    { skill_name: "Android Studio" },
 
 
 ];
@@ -110,7 +111,7 @@ export const projectsData = [
     },
     {
         id: 2,
-        name: " Vehicle Locator in Java",
+        name: "Vehicle Locator in Java",
         description: "Vehicle Locator is a Java application designed to help drivers quickly find the nearest available mechanic when a vehicle breaks down.",
         image: "/pro2.png",
         category: "Web",
